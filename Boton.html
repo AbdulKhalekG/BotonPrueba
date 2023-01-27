@@ -8,11 +8,16 @@
 	<h1>Hola Mundo</h1>
 	<p>Hola</p>
 
-	<!-- Uso mi Web Component -->
+	<!-- Uso mi Web Component, le hemos colocado el atributo is="botonholamundo" para indicar que no es un botón normal, sino uno que lo extiende y especializa -->
+    
 	<button is="botonholamundo"></button>
 
+
+            
 	<script>
+        // Creando el custom element
 	//prototipo de elemento, a partir del elemento Button
+    
 	var prototipo = Object.create(HTMLButtonElement.prototype);
 
 	// manejador del evento createdCallback,
